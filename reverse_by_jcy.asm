@@ -1,5 +1,5 @@
 .data
-out_string: .asciiz "\don't convert this string! DON'T CONVERT THIS STRING!"
+out_string: .asciiz "\don't convert this string! DON'T CONVERT THIS STRING!\n"
 out_string_end:
 
 .text
@@ -14,7 +14,6 @@ out_string_end:
 	la $t6, out_string_end
 	la $t7, out_string_end
 	li $t1, 1
-
 LOOP:	
 	sub $t3, $a1, $t1
 	la $a3, out_string_end
