@@ -14,14 +14,13 @@ out_string_end:
 	la $t6, out_string_end
 	la $t7, out_string_end
 	li $t1, 1
-
 LOOP:	
 	sub $t3, $a1, $t1
 	la $a3, out_string_end
 	add $t4, $a3, $t1
 	subi $t4, $t4, 1
-	lb $t2, ($t3)
-	sb $t2, ($t4)
+	lb $t2, ($t3) ###
+	sb $t2, ($t4) ###
 	
 	addi $t1, $t1, 1
 	subi $t0, $t0, 1
