@@ -14,6 +14,7 @@ out_string_end:
 	la $t6, out_string_end
 	la $t7, out_string_end
 	li $t1, 1
+
 LOOP:	
 	sub $t3, $a1, $t1
 	la $a3, out_string_end
