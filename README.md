@@ -1,4 +1,4 @@
-# fr2
+# Mars simulator exercises
 
 **These are MIPS architecture assembly codes written with MARS simulator**
 
