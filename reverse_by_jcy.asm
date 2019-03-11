@@ -1,5 +1,5 @@
 .data
-out_string: .asciiz "\don't convert this string! DON'T CONVERT THIS STRING!la $a1, out_string_endla $a1, out_string_endla $a1, out_string_endla $a1, out_string_endla $a1, out_string_endla $a1, out_string_endla $a1, out_string_end"
+out_string: .asciiz "\don't convert this string! DON'T CONVERT THIS STRING!\n"
 out_string_end:
 
 .text
@@ -20,8 +20,8 @@ LOOP:
 	la $a3, out_string_end
 	add $t4, $a3, $t1
 	subi $t4, $t4, 1
-	lb $t2, ($t3) ###
-	sb $t2, ($t4) ###
+	lb $t2, ($t3)
+	sb $t2, ($t4)
 	
 	addi $t1, $t1, 1
 	subi $t0, $t0, 1
