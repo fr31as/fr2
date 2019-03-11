@@ -1,5 +1,5 @@
 .data
-out_string: .asciiz "\don't convert this string! DON'T CONVERT THIS STRING!"
+out_string: .asciiz "\don't convert this string! DON'T CONVERT THIS STRING!la $a1, out_string_endla $a1, out_string_endla $a1, out_string_endla $a1, out_string_endla $a1, out_string_endla $a1, out_string_endla $a1, out_string_end"
 out_string_end:
 
 .text
