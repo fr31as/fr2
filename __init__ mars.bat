@@ -1,1 +1,0 @@
-"C:\Program Files\Java\jre1.8.0_201\bin\java.exe" -jar "C:\Mars4_5.jar"
