@@ -5,8 +5,8 @@
     li $s0, 7
     li $s1, 3
     li $s2, 1
-    addi $sp, $sp, -12
-    sw $ra, 8($sp)
+   # addi $sp, $sp, -12
+   # sw $ra, 8($sp)
     
     la $t0, ($s0)
     la $t1, ($s0)
